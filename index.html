@@ -6,7 +6,58 @@
     <link rel="icon" href="mw.png" type="image/png">
     <title>Best manga to read</title>
     <style>
-        /* Styl domyślny - np. dla komputerów */
+      /* Domyślny styl - komputer */
+.sekcja-ciekawostka-obrazek {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  flex-direction: row; /* obrazek i tekst obok siebie */
+}
+
+/* Tekst i obrazek */
+.tekst-ciekawostki {
+  flex: 1;
+  min-width: 300px;
+}
+
+.obrazek-ciekawostka {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media query dla telefonów - układ pionowy i wycentrowanie */
+@media (max-width: 600px) {
+  .sekcja-ciekawostka-obrazek {
+    flex-direction: column; /* pionowo */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .tekst-ciekawostki {
+    min-width: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .obrazek-ciekawostka {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+      /* Styl domyślny - np. dla komputerów */
 body {
   font-family: Arial, sans-serif;
   max-width: 1600px;
@@ -21,6 +72,14 @@ header {
   text-align: center;
 }
 
+/* Styl dla obrazków: sprawia, że obrazki automatycznie dopasowują się do szerokości kontenera */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* usuwa dodatkowe marginesy pod obrazkiem */
+  margin: 0 auto; /* wyśrodkowanie (opcjonalnie) */
+}
+
 /* Media query: dla urządzeń o szerokości ekranu do 768px (np. tablety, telefony w poziomie) */
 @media (max-width: 768px) {
   body {
@@ -39,8 +98,9 @@ header {
     font-size: 80%;
   }
 }
+
       body {
-    zoom: 100%;
+    zoom: 105%;
 }
     img{
         width: 600px;
@@ -258,6 +318,7 @@ img {
 
     
     <nav>
+        <a href="#Death Note" style="color: red;">Death Note</a>
         <a href="#Gto" style="color: red;">Greate Teacher Onizuka</a>
         <a href="#Parasyte" style="color: red;">Parasyte</a>
         <a href="#initialD" style="color: red;">Initial D</a>
@@ -419,1501 +480,402 @@ img {
 
 </body>
 </html>
-
-<h2 class="fade-in" style="color: white;" id="Gto">12.Great Teacher Onizuka</h2>
+<h2 class="fade-in" style="color: white;" id="Death Note">13.Death Note  </h2> 
     <h2 style="color: gray; text-align: center; ">Status: Complete</h2><br>
-    <img src="ced8240c27f6fad7bff9bc478a50e085.jpg"><br>
-    <blockquote class="fancy-quote">"Class 2-C, idiot."</blockquote>
-    <h3>Great Teacher Onizuka, officially abbreviated as GTO, is a Japanese manga series written and illustrated by Tooru Fujisawa. It was originally serialized in Kodansha's shōnen manga magazine Weekly Shōnen Magazine from January 1997 to February 2002, with its chapters collected in 25 tankōbon volumes. The story focuses on 22-year-old ex-bōsōzoku member Eikichi Onizuka, who becomes a teacher at a private middle school, Holy Forest Academy, in Tokyo, Japan. It is a standalone sequel to Fujisawa's earlier manga series Shonan Junai Gumi and Bad Company, both of which focus on the life of Onizuka before becoming a teacher. </h3>
+    <img src="death-note.avif" ><br>
     
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
+    <blockquote class="fancy-quote">"This world is rotten, and those who are making it rot deserve to die"</blockquote>
+    <h3>Death Note <span class="kanji-tooltip" data-meaning="Death Note">(デスノート)</span>
 
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>Eikichi Onizuka, the main character of GTO, is actually based on a real stereotype in Japanese culture — the "Yankī" (ヤンキー), or delinquent youth. His look, attitude, and background as a former biker gang member reflect this rebellious archetype. <br>
-
-But what’s fascinating is that despite being rough, loud, and unorthodox, Onizuka ends up becoming one of the most caring, clever, and impactful teachers his students have ever had — flipping the stereotype on its head!</p>
-        </div>
-        <img src="GTO_volume_1.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">Great Teacher Onizuka</h2>
-        <h3>Autor: Tōru Fujisawa   </h3>
-        <h3>Genre: Comedy,School Life,Drama</h3>
-        <h3>Published by:   Kodansha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: May 16, 1997</h3>
-    
-
-
-      <a href="https://xbato.com/title/19054/364450" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-  
-<h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Tōru Fujisawa </h2>
-     <p>Tōru Fujisawa is a Japanese manga artist, born in 1967 in Hokkaido. He’s best known for creating Great Teacher Onizuka (GTO), a hit series about a former gangster who becomes an unorthodox but inspiring teacher. <br><br>
-
-Before GTO, he wrote Shōnan Junai Gumi, which tells the story of Onizuka’s youth. His manga often mix comedy, drama, and social themes, focusing on rebellious characters and school life. <br><br>
-
-He also created series like Tokko and GTO: Paradise Lost (a sequel to GTO).
-
-</p>
-
-    </div>
-    <div class="imagete">
-      <img src="ZF_gz1ZikqXwykdQGZrfkJc9Lw5wzvCR777Ln8NIPu2KsKJjQAJYctXnFrzAR3OX7P48AtoyyT453NrXpSjJbQ.webp" style="height:300px ;width: 210px; margin: 0;">
-    </div>
-  </div>
-   <h2>Anime Adaptation:</h2>
 <style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
+  .kanji-tooltip {
+  position: relative;
+  cursor: help;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Noto Serif JP', serif;
+}
 
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">GTO Anime adaptation</h2>
-      <p style="font-size: 20px;">
-       The Great Teacher Onizuka anime, based on the manga by Tōru Fujisawa, aired from 1999 to 2000 and has 43 episodes. Produced by Studio Pierrot, it follows Eikichi Onizuka, a 22-year-old ex-gang member who becomes a high school teacher. Although rude and immature, Onizuka is deeply committed to helping his troubled students in unconventional but effective ways. <br><br>
-
-The anime blends comedy, drama, and real-life issues, making it both entertaining and emotional. While it stays close to the manga's spirit, some arcs were changed or omitted. Interestingly, a live-action version of GTO aired in 1998, even before the anime. GTO remains a classic among school-life and coming-of-age anime series.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:270px ; height:400px ;" src="Great_Teacher_Onizuka.webp" />
-    </div>
-  </div>
-  </div>
- 
-   <h2 class="fade-in" style="color: white;" id="Parasyte">11.Parasyte</h2>
-    <h2 style="color: gray; text-align: center; ">Status: Complete</h2><br>
-    <img src="Featured-image-6.avif"><br>
-    <blockquote class="fancy-quote">"Humans are the only animals that don't sleep when tired and eat when not hungry"</blockquote>
-    <h3>Parasyte is a Japanese science fiction horror manga series written and illustrated by Hitoshi Iwaaki. It was published in Kodansha's Morning Open Zōkan (1989) and Monthly Afternoon (1989 to 1994).The manga was published in North America first by Tokyopop, then Del Rey, and finally Kodansha USA. The series follows Shinichi Izumi, a high school senior who is the victim of a failed attempt by a parasitic organism to take over his brain.  </h3>
-    
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
-
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>In Parasyte, the main character Shinichi originally loses his right hand to the alien parasite Migi—but in the original manga, the story was created in the late 1980s, long before body-horror themes became more mainstream in anime. Despite its age, Parasyte inspired many modern sci-fi horror series and even got a live-action film adaptation and a 2014 anime reboot, nearly 25 years after the manga ended!</p>
-        </div>
-        <img src="Parasyte_4.png" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
+.kanji-tooltip:hover::after {
+  content: attr(data-meaning);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4757;
   color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">Parasyte</h2>
-        <h3>Autor: Hitoshi Iwaaki   </h3>
-        <h3>Genre: Science fiction horror</h3>
-        <h3>Published by:   Kodansha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  May 1988</h3>
-    
-
-
-      <a href="https://w9.parasytemanga.com/" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-  
-<h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Hitoshi Iwaaki</h2>
-     <p>Hitoshi Iwaaki is a Japanese manga artist born on July 28, 1960. He is best known for creating the sci-fi horror manga Parasyte (Kiseijuu), which ran from 1988 to 1995. The series became a cult hit and gained renewed popularity with its 2014 anime adaptation. Iwaaki is known for blending horror, philosophy, and human psychology in his storytelling. His other works include Historie, a historical manga about the life of Eumenes, a general under Alexander the Great.
-
-</p>
-
-    </div>
-    <div class="imagete">
-      <img src="main_alt-47ca7b143c4d80713196e98f8a6ef3c0.jpeg" style="height:300px ;width: 200px; margin: 0;">
-    </div>
-  </div>
-   <h2>Anime Adaptation:</h2>
-<style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">Parasyte -the maxim- (Kiseijuu: Sei no Kakuritsu)</h2>
-      <p style="font-size: 20px;">
-        The anime adaptation of Parasyte aired from October 2014 to March 2015. It was produced by Madhouse and directed by Kenichi Shimizu, with music by Ken Arai.<br><br>
-        The anime closely follows the original manga, modernizing some elements (like smartphones) to match the 2010s setting. It ran for 24 episodes and was praised for its animation, voice acting, and faithful adaptation of the manga’s psychological and ethical themes.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="Kiseijuu_Anime_Poster.webp" />
-    </div>
-  </div>
-  </div>
-<h2 class="fade-in" style="color: white;" id="initialD">10.Initial D</h2>
-    <h2 style="color: gray; text-align: center; ">Status: Complete</h2><br>
-    <img src="p88kgbd4uxd71.webp" style="height: 340px;"><br>
-    <blockquote class="fancy-quote">"The One With The Stronger Heart, Always Wins the Battle!"</blockquote>
-    <h3>Initial D is a Japanese street racing manga series written and illustrated by Shuichi Shigeno. It was serialized in Kodansha's seinen manga magazine Weekly Young Magazine from 1995 to 2013, with the chapters collected into 48 tankōbon volumes.The story focuses on the world of illegal Japanese street racing, where all the action is concentrated in the mountain passes and rarely in cities or urban areas, and with the drifting racing style emphasized in particular. </h3>
-    
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
-
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>The iconic car driven by Takumi Fujiwara in Initial D — the Toyota AE86 Trueno — became a cult legend thanks to the series. In real life, the AE86 was just a modest, lightweight car from the 1980s, but Initial D turned it into one of the most beloved drift cars in the world. Its popularity even boosted sales of tofu in Japan because Takumi's family runs a tofu shop!</p>
-        </div>
-        <img src="91oZ6lnLL-L._UF1000,1000_QL80_.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">Initial D</h2>
-        <h3>Autor: Shuichi Shigeno   </h3>
-        <h3>Genre: Action, coming-of-age, and sports</h3>
-        <h3>Published by:  Shūkan Young Magazine</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  June 26, 1995</h3>
-    
-
-
-      <a href="https://mangadex.org/chapter/12d49511-fa35-4859-b832-0b8c37ae7bb8" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-  
-<h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Shuichi Shigeno</h2>
-     <p>Shuichi Shigeno was born in Matsunoyama , Tokamachi City , Niigata Prefecture. When Shigeno was in high school, he was obsessed with motorcycles, which resulted in one of his best-selling series, Bari Bari Densetsu. Before Shigeno became a manga artist, he was a poor student. Still, after Baribari Densetsu sold well and got a lot of money from royalties on the first edition, he bought his first car (Toyota AE86) and lived in a small apartment.</p>
-
-    </div>
-    <div class="imagete">
-      <img src="Shigeno.webp" style="height:300px ;width: 200px; margin: 0;">
-    </div>
-  </div>
-    <h2>Anime Adaptation:</h2>
-<style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">Initial D Anime Adaptation</h2>
-      <p style="font-size: 20px;">
-        Initial D is a popular anime series based on Shuichi Shigeno's manga about street racing in the mountains of Japan. The first anime adaptation aired in 1998 as a 26-episode series called Initial D First Stage. It was produced by Studio Gallop and focused on the early racing career of Takumi Fujiwara, a talented teenage driver. <br><br>
-
-The series continued with several sequels and movies, including Second Stage (1999-2000), Third Stage (2001 movie), Fourth Stage (2004-2006), and Fifth Stage (2012-2013). The anime is famous for its intense racing scenes, detailed car models, and iconic Eurobeat soundtrack that perfectly matches the high-energy races. <br><br>
-
-Initial D helped popularize drifting culture worldwide and remains a cult classic among racing and anime fans.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="MV5BZmM0MTI5MjAtYWI4YS00MmUzLWEyYWEtOGQ0YjZjYzQ0NzI3XkEyXkFqcGc@._V1_.jpg" />
-    </div>
-  </div>
-
-
-    <h2 class="fade-in" style="color: white;" id="Hunter">9.Hunter × Hunter</h2>
-    <h2 style="color: gray; text-align: center; ">Status: Ongoing</h2><br>
-    <img src="gon-leorio-and-kurapika-on-a-hunter-x-hunter-manga-cover.jpg"><br>
-    <blockquote class="fancy-quote">"Something more important than the thing you're hunting could be right there by the side of the road."</blockquote>
-    <h3>Hunter × Hunter is a manga by Yoshihiro Togashi. The manga has been published since March 8, 1998 in Weekly Shonen Jump magazine, although since 2006 the publication has been frequently interrupted for long periods. As of September 2024, 400 chapters and 38 volumes have been published. The manga was on hiatus for a long time; chapter 390 was published on November 26, 2018.</h3>
-    
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
-
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>Since 2006, Yoshihiro Togashi has repeatedly put the series on hiatus due to health issues. Fans often joke that a new chapter is “due” every autumn—but Togashi works at his own pace.</p>
-        </div>
-        <img src="hunter.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">Hunter x Hunter</h2>
-        <h3>Autor: Yoshihiro Togashi   </h3>
-        <h3>Genre: Adventure Fantasy Martial arts</h3>
-        <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  June 4, 1998</h3>
-    
-
-
-      <a href="https://hunterxhuntermanga.online/" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-  
-<h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Yoshihiro Togashi</h2>
-     <p>Togashi is known for his creativity, deep storytelling, and willingness to explore psychological and philosophical themes in shōnen manga. He is married to Naoko Takeuchi, the creator of Sailor Moon. Despite challenges, Togashi remains one of the most respected and influential manga artists of his generation.</p>
-
-    </div>
-    <div class="imagete">
-      <img src="n96893-QixoFuZYSkpq.png" style="height:300px ;width: 200px; margin: 0;">
-    </div>
-  </div>
-    
-<h2>Anime Adaptation:</h2>
-<style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">Hunter × Hunter Anime Adaptation - Old 1999</h2>
-      <p style="font-size: 20px;">
-       Hunter × Hunter has two major anime adaptations. The first one aired from 1999 to 2001, produced by Nippon Animation, with a total of 62 episodes. This version covers the story from the beginning up to the start of the Greed Island arc. It features classic 90s animation style with a slower pacing and a nostalgic feel. The soundtrack by Toshihiko Sahashi is well-loved, and many longtime fans appreciate this adaptation for its faithful retelling of the early manga chapters.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="1V5BNDBiMzMyMWItNDFkYy00MjBmLTk2ZDAtYmE2N2U4YzFlZDRmXkEyXkFqcGc@._V1_.jpg" />
-    </div>
-  </div>
-  <br>
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">Hunter × Hunter Anime Adaptation - New 2011</h2>
-      <p style="font-size: 20px;">
-       The second adaptation, produced by Madhouse, aired from 2011 to 2014 and consists of 148 episodes. It covers almost the entire manga storyline up to the end of the 13th Hunter Chairman Election arc, including major arcs like the Hunter Exam, Heavens Arena, Greed Island, Chimera Ant, and Election arcs. This version features modern, polished animation with updated character designs and faster pacing. The music, composed by Yoshihisa Hirano and Hideki Taniuchi, adds an atmospheric and intense mood to the series. It is praised for its high-quality animation, faithful storytelling, and strong character development, and is considered by many fans as the definitive Hunter × Hunter adaptation.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="MV5BYzYxOTlkYzctNGY2MC00MjNjLWIxOWMtY2QwYjcxZWIwMmEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
-    </div>
-  </div>
-
-
-    <h2 class="fade-in" style="color: white;" id="jojo">8.JoJo's Bizarre Adventure</h2>
-    <h2 style="color: gray; text-align: center; ">Status: Ongoing</h2><br>
-    <img src="Joestar-Family-JoJos-Bizarre-Adventure-Featured.avif"><br>
-    <blockquote class="fancy-quote">"I’ve returned from hell, Dio!"</blockquote>
-    <h3>JoJo's Bizarre Adventure is a Japanese manga series written and illustrated by Hirohiko Araki. It was originally serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from 1987 to 2004, and was transferred to the monthly seinen manga magazine Ultra Jump in 2005. The series is divided into a total of nine main story arcs, each following a new protagonist bearing the "JoJo" nickname. JoJo's Bizarre Adventure is the largest ongoing manga series published by Shueisha by number of volumes, with its chapters collected in 136 tankōbon volumes as of December 2024.</h3> 
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
-
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>JoJo’s Bizarre Adventure author Hirohiko Araki designed a cover for Vogue magazine and collaborated with Gucci.</p>
-        </div>
-        <img src="jojo1.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
-      
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">JoJo's Bizarre Adventure</h2>
-        <h3>Autor: Hirohiko Araki </h3>
-        <h3>Genre: Adventure Supernatural</h3>
-        <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: January 1, 1987</h3>
-    
-
-
-      <a href="https://readjojos.com/" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-  
-
-     <h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Hirohiko Araki</h2>
-     <p>Hirohiko Araki is a Japanese manga artist, born on June 7, 1960. He is best known for creating the long-running series JoJo’s Bizarre Adventure, which began in 1987. Araki’s unique art style and imaginative storytelling have made JoJo a cult classic worldwide. His work often blends action, fashion, and surrealism. He continues to expand the JoJo universe through new story arcs.</p>
-
-    </div>
-    <div class="imagete">
-      <img src="img_prof.webp" style="height:300px ;width: 240px; margin: 0;">
-    </div>
-  </div>
-
-<h2>Anime Adaptation:</h2>
-<style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">JoJo’s Bizarre Adventure Anime Adaptation Old Anime (1993 & 2000)</h2>
-      <p style="font-size: 20px;">
-       Before the modern 2012 adaptation, JoJo’s Bizarre Adventure had an earlier anime version in the form of an OVA (Original Video Animation). The first episodes were released in 1993, with a prequel set of episodes released in 2000, making a total of 13 episodes. The OVA was produced by Studio A.P.P.P. and covers only Part 3 of the manga – Stardust Crusaders. <br><br>
-
-Interestingly, the 1993 OVA starts in the middle of the story, while the 2000 episodes later filled in the beginning. This version had a much darker and more serious tone than the later adaptations. The art style was more realistic and subdued, and the pacing was slower. <br><br>
-
-Although it only covers one part of the Joestar family’s adventures, this was the first animated portrayal of the JoJo universe and introduced many fans to the series in the 1990s.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="JoJo's_Bizarre_Adventure_OVA.jpg" />
-    </div>
-  </div>
-   <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">JoJo’s Bizarre Adventure – New Anime (2012–present)</h2>
-      <p style="font-size: 20px;">
-      The modern adaptation of JoJo’s Bizarre Adventure began airing in 2012, produced by David Production. It starts from Part 1: Phantom Blood and faithfully adapts the manga in chronological order, with high-quality animation, vibrant colors, and iconic music. <br><br>
-
-Each part focuses on a different member of the Joestar bloodline and their battles involving supernatural powers, especially Stands (starting in Part 3). As of now, the anime has adapted: <br><br>
-
-Part 1: Phantom Blood (2012) <br>
-
-Part 2: Battle Tendency (2012–2013) <br>
-
-Part 3: Stardust Crusaders (2014–2015)<br>
-
-Part 4: Diamond is Unbreakable (2016)<br>
-
-Part 5: Golden Wind (2018–2019)<br>
-
-Part 6: Stone Ocean (2021–2022)<br><br>
-
-The series is praised for its stylish animation, creative fights, faithful adaptation of Araki’s manga, and memorable characters and poses. It helped JoJo gain massive popularity worldwide and has become a cultural phenomenon.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="qV5BMzIyNzY4NTMtNmVhYS00OWFhLTkwMWMtOGFkNTdmNWU2ZDdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-    <h2 class="fade-in" style="color: white;" id="one-piece">7.One Piece </h2>
-    <h2 style="color: gray; text-align: center; ">Status: Ongoing</h2><br>
-    <img src="Chapter_1.webp" style="height: 400px; width: 600px;"><br>
-    <blockquote class="fancy-quote">"One Piece does exist!"</blockquote>
-    <h3>One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, as he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates."One Piece. Big Score" is a shonen manga authored by Eiichiro Oda.</h3>
-    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
-
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-      }
-      .container img {
-        width: 200px; 
-        margin-right: 40px;
-        
-      }
-      .text {
-        max-width: 600px;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sekcja-ciekawostka-obrazek">
-        <div class="tekst-ciekawostki">
-          <h3> Did you know that...</h3>
-          <p>As of 2024, One Piece has sold over 500 million copies worldwide.
-
-            It holds a Guinness World Record for “The most copies published for the same comic book series by a single author.”
-            
-            </p>
-        </div>
-        <img src="one piece.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
-      </div>
- <style>
- .sekcja-ciekawostka-obrazek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 16px;
-  max-width: 600px;
-  margin: 40px auto;
-  flex-wrap: wrap;
-}
-
-.tekst-ciekawostki {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tekst-ciekawostki h3 {
-  margin-bottom: 10px;
-  color: #ff3366;
-}
-
-.tekst-ciekawostki p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.obrazek-ciekawostka {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
-
- </style>      
-      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
-        <h2 style="color: red;margin-right: 200px">One Piece</h2>
-        <h3>Autor: Eiichiro Oda    </h3>
-        <h3>Genre: Adventure Fantasy comedy Science fiction </h3>
-        <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: July 22, 1997</h3>
-    
-
-
-      <a href="https://w025.1piecemanga.com/" target="_blank">
-        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
-          Start reading
-        </button>
-      </a>
-      </div>
-    </div>
-    
-    
-    <h2>A few words about the author:</h2>
-     <style>
-    .on {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .textor {
-      flex: 1;
-      padding: 20px;
-      font-size: 25px;
-    }
-
-    .imagete {
-      flex: 1;
-      padding: 20px;
-      text-align: left; 
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="on">
-    <div class="textor">
-      <h2 style="color: red;">Eiichiro Oda</h2>
-     <p>Eiichiro Oda is a Japanese manga artist born on January 1, 1975. He is the creator of One Piece, one of the most successful manga series of all time. Oda began his career as an assistant before launching One Piece in 1997. Known for his rich world-building, humor, and emotional storytelling, Oda has become one of the most influential figures in manga history.</p>
-
-    </div>
-    <div class="imagete">
-      <img src="wewq.jpg" style="height:300px ;width: 200px; margin: 0;">
-    </div>
-  </div>
-   <h2>Anime Adaptation:</h2>
-<style>
-    .cont {
-      display: flex;
-      align-items: center;
-      max-width: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-    .textop {
-      flex: 1;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-    .imagekol {
-      flex: 1;
-      text-align: right;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="cont">
-    <div class="textop">
-      <h2 style="font-size: 30px;">One Piece Anime Adaptation</h2>
-      <p style="font-size: 20px;">
-       One Piece, created by Eiichiro Oda, is one of the longest-running and most popular anime series in the world. The anime began airing in October 1999 and is produced by Toei Animation. <br><br>
-
-The story follows Monkey D. Luffy and his crew of pirates as they search for the legendary treasure called "One Piece" in order to become the Pirate King. The series is known for its adventurous spirit, colorful characters, emotional storytelling, and imaginative world-building. <br><br>
-
-With over 1000 episodes and counting, One Piece has captivated audiences worldwide and is praised for its consistency, humor, and ability to balance action with heartfelt moments.
-      </p>
-    </div>
-    <div class="imagekol">
-      <img style="width:300px ; height:400px ;" src="wV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg" />
-    </div>
-  </div> 
-   
-    <h2 class="fade-in" style="color: white;" id="berserk">6.Berserk </h2>
-    <h2 style="<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="mw.png" type="image/png">
-    <title>Best manga to read</title>
-    <style>
-      /* Styl domyślny - np. dla komputerów */
-body {
-  font-family: Arial, sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Media query: dla urządzeń o szerokości ekranu do 768px (np. tablety, telefony w poziomie) */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  header {
-    padding: 10px;
-    font-size: 90%;
-  }
-}
-
-/* Media query: dla urządzeń o szerokości ekranu do 480px (telefony w pionie) */
-@media (max-width: 480px) {
-  header {
-    font-size: 80%;
-  }
-}
-
-      body {
-    zoom: 100%;
-}
-    img{
-        width: 600px;
-        height: 300px;
-       display: block;
-        margin: 0 auto;
-    }
-    h3,div{
-        font-family:Arial, Helvetica, sans-serif ;
-        color: white;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h2,h1{
-        color: white;
-        text-align: center;
-
-    }
-    body{
-        background-color: rgb(0, 0, 0)
-    }
-    img:hover {
-  transform: scale(1.2);
-  transition: 0.3s ease;
-}
-img {
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-img:hover {
-  filter: grayscale(0%);
-}
-
-.fancy-quote {
-  font-style: italic;
-  font-size: 1.5em;
-  border-left: 5px solid #aaa;
-  padding-left: 15px;
-  color: #444;
-}
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 4s forwards;
-}
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-
-.typing {
-  font-family: 'Courier New', monospace;
-  display: inline-block;
-  width: 0;
-  overflow: hidden;
+  padding: 5px 10px;
+  border-radius: 5px;
   white-space: nowrap;
-  border-right: 3px solid;
-  animation: typing 3s steps(30) 1s forwards;
+  font-size: 1rem;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
 }
 
-@keyframes typing {
-  to {
-    width: 100%;
-  }
+.kanji-tooltip::after {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 10; 
-}
-
-
-nav a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
-
-section {
-  padding: 60px;
-  margin: 20px 0;
-  background-color: #333;
-  color: white;
-}
-
-
-section h2 {
-  font-size: 36px;
-  color: #ff9900;
-}
-
-
-section:nth-child(even) {
-  background-color: #444;
-}
-
-section:nth-child(odd) {
-  background-color: #555;
-}
-
-
-body {
-  background: black url('stars.png') repeat;
-  animation: starScroll 60s linear infinite;
-}
-@keyframes starScroll {
-  from { background-position: 0 0; }
-  to { background-position: 1000px 1000px; }
-}
-img {
-  border: 5px solid white;
-  box-shadow: 0 0 0 5px black;
-}
-
-    </style>
-
-</head>
-<body>
-  
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    nav {
-      background-color: #222;
-      padding: 10px 20px;
-    }
-
+</style> is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. It was first published in Weekly Shōnen Jump from 2003 to 2006. The story follows Light Yagami, a high school student who discovers a mysterious notebook called the "Death Note." This notebook allows him to kill anyone simply by writing their name in it while picturing their face. <br><br>  
+Death Note media, except for video games and soundtracks, is licensed and released in North America by Viz Media. The episodes from the anime first appeared in North America as downloadable from IGN before Viz Media licensed it. The series was aired on YTV's Bionix programming block in Canada and on Adult Swim in the United States with a DVD release following <br>
     
-    .menu-toggle {
-      width: 30px;
-      cursor: pointer;
-      display: inline-block;
-    }
-
-    .menu-toggle div {
-      background-color: white;
-      height: 4px;
-      margin: 5px 0;
-    }
-
-   
-    .menu {
-      display: none;
-      flex-direction:row; 
-      background-color: #333;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .menu a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      border-left: 1px solid #444;
-    }
-
-    .menu a:first-child {
-      border-left: none;
-    }
-
-    .menu a:hover {
-      background-color: #444;
-    }
-
-    
-    .menu.active {
-      display: flex;
-    }
-  </style>
-</head>
-<body>
+    <hr style="width: 100%; border: 1px solid rgb(255, 255, 255);">
 
 
-
-  
- <nav style="display: flex; flex-direction: column; align-items: flex-start;">
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-   
-  </div>
-  <div class="menu" id="menu">
-    <a href="">Home page</a> 
-    <a href="">New manga</a>
-    <a href="">Manga news</a>
-    <a href="">Anime</a>
-    <a href="">Threads</a>
-    <a href="">More</a>
-  </div>
-</nav>
-  
-
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
-  </script>
-
-
-
-    <h1 class="typing">Best manga to read in 2025</h1>
-
-
-    
-    <nav>
-        <a href="#Gto" style="color: red;">Greate Teacher Onizuka</a>
-        <a href="#Parasyte" style="color: red;">Parasyte</a>
-        <a href="#initialD" style="color: red;">Initial D</a>
-        <a href="#Hunter" style="color: red;">Hunter × Hunter</a>
-        <a href="#jojo" style="color: red;">JoJo's Bizarre Adventure</a>
-        <a href="#one-piece" style="color: red;">One Piece</a>
-        <a href="#berserk" style="color: red;"> Berserk</a>
-        <a href="#monster" style="color: red;">Monster </a>
-        <a href="#vagabond" style="color: red;">Vagabond</a>
-        <a href="#slam dunk" style="color: red;">Slam Dunk</a>
-        <a href="#climber" style="color: red;"> The Climber</a>
-        <a href="#vinlandsaga" style="color: red;">Vinland Saga</a>
-
-      </nav>
-      
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Manga Shelf – Dark Mode</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #121212;
-      color: #f5f5f5;
-      padding: 2rem;
-    }
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    #addSection {
-      margin-bottom: 2rem;
-    }
-
-    input[type="text"] {
-      padding: 0.5rem;
-      width: 250px;
-      border: 1px solid #555;
-      border-radius: 5px;
-      background: #1e1e1e;
-      color: #fff;
-    }
-
-    button {
-      margin: 0.2rem;
-      padding: 0.5rem 0.8rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .add-btn {
-      background-color: red;
-      color: #000;
-    }
-
-    .manga {
-      background: #1e1e1e;
-      padding: 1rem;
-      border-left: 6px solid #777;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
-    }
-
-    .status-read { border-left-color: #00e676; }
-    .status-want { border-left-color: #ffd600; }
-    .status-dropped { border-left-color: #ff5252; }
-
-    .status-label {
-      font-weight: bold;
-      margin-top: 0.5rem;
-      display: block;
-    }
-
-    .control-buttons button {
-      font-size: 0.9rem;
-      background-color: #333;
-      color: #f5f5f5;
-      border: 1px solid #555;
-    }
-
-    .control-buttons button:hover {
-      background-color: #444;
-    }
-  </style>
-</head>
-<body>
-
-  <h1 style="text-align: left;"> My Manga Shelf</h1>
-
-  <div id="addSection">
-    <input type="text" id="mangaTitle" placeholder="Enter manga title" />
-    <button class="add-btn" onclick="addManga()">Add</button>
-  </div>
-
-  <div id="shelf">
-    <!-- Manga entries will appear here -->
-  </div>
-
-  <script>
-    function addManga() {
-      const title = document.getElementById('mangaTitle').value.trim();
-      if (!title) return;
-
-      const div = document.createElement('div');
-      div.className = 'manga';
-
-      const titleElem = document.createElement('div');
-      titleElem.textContent = title;
-      titleElem.style.fontSize = '1.1rem';
-      titleElem.style.fontWeight = 'bold';
-
-      const statusLabel = document.createElement('span');
-      statusLabel.className = 'status-label';
-      statusLabel.textContent = 'Status: none';
-
-      const controls = document.createElement('div');
-      controls.className = 'control-buttons';
-
-      const readBtn = createStatusButton('✅ Read', 'read', div, statusLabel);
-      const wantBtn = createStatusButton('📖 Want to read', 'want', div, statusLabel);
-      const dropBtn = createStatusButton('🚫 Dropped', 'dropped', div, statusLabel);
-
-      controls.appendChild(readBtn);
-      controls.appendChild(wantBtn);
-      controls.appendChild(dropBtn);
-
-      div.appendChild(titleElem);
-      div.appendChild(statusLabel);
-      div.appendChild(controls);
-
-      document.getElementById('shelf').appendChild(div);
-      document.getElementById('mangaTitle').value = '';
-    }
-
-    function createStatusButton(text, status, container, label) {
-      const btn = document.createElement('button');
-      btn.textContent = text;
-      btn.onclick = () => {
-        container.classList.remove('status-read', 'status-want', 'status-dropped');
-        container.classList.add(`status-${status}`);
-        label.textContent = 'Status: ' + statusText(status);
-      };
-      return btn;
-    }
-
-    function statusText(code) {
-      switch (code) {
-        case 'read': return 'Read';
-        case 'want': return 'Want to read';
-        case 'dropped': return 'Dropped';
-        default: return 'None';
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
       }
+      .container img {
+        width: 200px; 
+        margin-right: 40px;
+        
+      }
+      .text {
+        max-width: 600px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sekcja-ciekawostka-obrazek">
+        <div class="tekst-ciekawostki">
+          <h3> Did you know that...</h3>
+          <p>In some countries, Death Note was banned in schools after students made fake "Death Notes" and wrote classmates' names in them, raising concerns about violence and dark themes.</p>
+        
+        </div>
+        <img src="Death_Note_Vol_1.jpg" alt="JoJo Bizarre Adventure" class="obrazek-ciekawostka">
+      </div>
+ <style>
+ .sekcja-ciekawostka-obrazek {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.tekst-ciekawostki {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tekst-ciekawostki h3 {
+  margin-bottom: 10px;
+  color: #ff3366;
+}
+
+.tekst-ciekawostki p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.obrazek-ciekawostka {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+ </style>      
+      <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
+        <h2 style="color: red;margin-right: 200px">Death Note</h2> 
+        
+        <h3>Autor: Tsugumi Ohba  </h3>
+        <h3>Illustrator: Takeshi Obata</h3>
+        <h3>Genre: Supernatural, Psychological Thriller</h3>
+        <h3>Published by: Shueisha</h3>
+        <h3>Volumes: 12</h3>
+        <h3 style="margin-right: 200px; " >Original run:	December 1, 2003 – May 15, 2006</h3>
+        
+
+
+      <a href="https://w11.death-note-manga.com/" target="_blank">
+        <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
+          Start reading
+        </button>
+      </a>
+      </div>
+    </div>
+  <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
     }
-  </script>
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
-</body>
-</html>
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Ryuk</h2>
+      <p style="font-size: 20px;">
+       A Shinigami who grows bored with the Shinigami Realm and drops his Death Note into the human world just to see what will happen. <br><br>
+He enjoys observing the chaos caused by Light and often makes sarcastic or darkly humorous comments about the situation. <br><br>
+Ryuk doesn’t interfere with Light’s plans or help him, only acting when he’s curious or when his own needs (like apples) are involved.
+His neutral role emphasizes the idea that Shinigami are above human concerns, seeing life and death as entertainment. <br><br>
+In the end, Ryuk fulfills his promise to write Light’s name in the Death Note when Light’s time is up.
 
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="i-colored-ryuk-v0-mykpy0okq18b1.webp" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Light Yagami </h2>
+      <p style="font-size: 20px;">
+      A brilliant and ambitious high school student who becomes disillusioned with the world’s corruption and crime. 
+After discovering the Death Note, he decides to use it to eliminate criminals and create a new world where he rules as a god.<br><br>
+He uses the alias Kira to hide his identity and outsmart the police, including the genius detective L.
+Though he begins with seemingly noble goals, Light becomes increasingly manipulative, arrogant, and willing to sacrifice anyone—including his own family—to maintain his power.<br><br>
+His duality as both a hero (in his mind) and a villain (to others) is one of the central themes of the story.
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="6fcaf4fe23ca8a7bc04344363cc990a9.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">L (L Lawliet)</h2>
+      <p style="font-size: 20px;">
+      The world’s greatest detective, known for his strange behavior, brilliant deductive reasoning, and love of sweets. <br><br>
+He hides his identity behind a letter, rarely shows his face, and uses aliases and proxies to protect himself from Kira.
+Despite his odd mannerisms, he is extremely focused and intelligent, quickly suspecting Light as Kira and even placing himself close to him by joining the investigation team. <br><br>
+L's psychological battle with Light forms the intense core of the first half of the series, filled with mind games, traps, and philosophical conflict. <br><br>
+L deeply values truth and justice, and his death marks a major turning point in the story.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="6131548-l (colour).png" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Misa Amane</h2>
+      <p style="font-size: 20px;">
+     Misa is a famous model and actress who becomes emotionally attached to Kira after he punishes the man who murdered her parents. <br><br>
+She receives a Death Note from the Shinigami Rem and becomes the Second Kira, acting as Light’s ally and romantic partner.
+Misa is bubbly, cheerful, and impulsive, but also deeply devoted to Light, often putting herself at great risk to help him. <br><br>
+Her Shinigami Eyes allow her to see people’s real names just by looking at their faces, which makes her a valuable asset to Light.
+Despite her loyalty, Light manipulates her emotions for his own gain, never truly returning her love.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="295978.webp" />
+    </div>
+  </div>
+  <h2>A few words about the author:</h2>
+     <style>
+    .on {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .textor {
+      flex: 1;
+      padding: 20px;
+      font-size: 25px;
+    }
+
+    .imagete {
+      flex: 1;
+      padding: 20px;
+      text-align: left; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="on">
+    <div class="textor">
+      <h2 style="color: red;">Tsugumi Ohba </h2>
+     <p>Tsugumi Ohba is the mysterious writer behind Death Note. Very little is known about their personal life, and their real identity has never been confirmed. Some fans even believe that "Tsugumi Ohba" is a pen name. Despite the secrecy, Ohba is known for creating intelligent and thought-provoking stories. <br>
+    
+</p>
+    </div>
+    <div class="imagete">
+      <img src="0014544118-L.jpg" style="height:300px ;width: 210px; margin: 0;">
+    </div>
+  </div>
+  <div class="on">
+    <div class="textor">
+      <h2 style="color: red;">Takeshi Obata </h2>
+     <p>
+Takeshi Obata is a famous Japanese manga artist, best known as the illustrator of Death Note. <br><br>
+ He is admired for his clean, detailed, and expressive art style. Obata has worked on many popular manga series, including Hikaru no Go, Bakuman, and Platinum End. He often collaborates with talented writers like Tsugumi Ohba. His artwork plays a big role in bringing complex characters and dramatic scenes to life.
+</p>
+    </div>
+    <div class="imagete">
+      <img src="Takeshi-obata-1-.webp" style="height:300px ;width: 280px; margin: 0;">
+    </div>
+  </div>
+  
+   <h2>Anime Adaptation:</h2>
+<style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Death Note adaptation</h2>
+      <p style="font-size: 20px;">
+       The Death Note anime adaptation was released in 2006 and produced by Madhouse, a well-known Japanese animation studio. <br><br>
+        The series has 37 episodes and closely follows the story of the original manga. It features high-quality animation, intense music, and strong voice acting that bring the psychological battles between Light Yagami and L to life. <br><br>
+         The anime became very popular worldwide and is often praised for its dark atmosphere, smart storytelling, and memorable characters. It helped make Death Note one of the most iconic anime series of all time.
+
+ 
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:270px ; height:400px ;" src="12qweBYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
+    </div> 
+  </div>
+  </div>
 <h2 class="fade-in" style="color: white;" id="Gto">12.Great Teacher Onizuka</h2>
     <h2 style="color: gray; text-align: center; ">Status: Complete</h2><br>
     <img src="ced8240c27f6fad7bff9bc478a50e085.jpg"><br>
@@ -1994,7 +956,8 @@ But what’s fascinating is that despite being rough, loud, and unorthodox, Oniz
         <h3>Autor: Tōru Fujisawa   </h3>
         <h3>Genre: Comedy,School Life,Drama</h3>
         <h3>Published by:   Kodansha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: May 16, 1997</h3>
+        <h3>Volumes: 	25</h3>
+        <h3 style="margin-right: 200px; " >Original run:		January 8, 1997 – February 13, 2002</h3>
     
 
 
@@ -2005,7 +968,173 @@ But what’s fascinating is that despite being rough, loud, and unorthodox, Oniz
       </a>
       </div>
     </div>
-  
+   <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Eikichi Onizuka</h2>
+      <p style="font-size: 20px;">
+       A 22-year-old former biker gang leader (and a virgin) who decides to become a teacher to meet high school girls—but ends up becoming a true role model. 
+Despite his crude behavior, immaturity, and love of dirty jokes, Onizuka genuinely cares for his students and often risks his career and safety to help them. <br><br>
+His unorthodox teaching methods—ranging from wild stunts to deep emotional support—help students deal with serious issues like bullying, suicide, depression, abuse, and isolation. <br><br>
+Over time, he earns the loyalty and admiration of even the most troubled students, showing them that not all adults are fake or corrupt.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:430px ;" src="87f5f6e697c757a5489459bd94ffed4b.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Azusa Fuyutsuki </h2>
+      <p style="font-size: 20px;">
+     A young, compassionate teacher and one of the few staff members who supports Onizuka from the beginning.
+She’s calm, intelligent, and gentle, acting as a stabilizing influence around Onizuka’s chaotic presence. <br><br>  
+Although she’s often embarrassed or frustrated by his behavior, she gradually sees his sincerity and develops romantic feelings for him (though it remains subtle and unresolved).
+Her own backstory shows the pressure women face in the teaching profession, and she often defends her students’ emotional well-being.
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="Azusa_Fuyutsuki.webp" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Hiroshi Uchiyamada</h2>
+      <p style="font-size: 20px;">
+     Uchiyamada is the conservative and self-important vice principal of the school who sees Onizuka as a threat to discipline and tradition.
+He is obsessed with two things: maintaining order and his beloved Toyota Cresta (which Onizuka often destroys). <br><br>
+He constantly tries to get Onizuka fired but ends up being humiliated over and over again. <br><br>
+Despite being the “antagonist,” Uchiyamada is also a symbol of the rigid, outdated education system—and occasionally shows a human side full of stress, pressure, and insecurity.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="Hiroshi.webp" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Urumi Kanzaki</h2>
+      <p style="font-size: 20px;">
+   Urumi is a gifted student with a genius-level IQ and a dangerously manipulative personality.
+Her deep hatred of adults stems from a traumatic betrayal by a teacher and neglect from her mother. <br><br>
+She enjoys toying with people and has a cruel side—but underneath is a lonely girl desperate for someone she can trust. <br><br>
+Onizuka gains her trust through raw honesty and by standing up to her without fear, becoming one of the few people she truly respects.
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="9976d249afebbc6a76efb9575fffbb94.jpg" />
+    </div>
+  </div>
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -2165,10 +1294,11 @@ The anime blends comedy, drama, and real-life issues, making it both entertainin
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Parasyte</h2>
-        <h3>Autor: Hitoshi Iwaaki   </h3>
+       <h3>Autor: Hitoshi Iwaaki   </h3>
         <h3>Genre: Science fiction horror</h3>
         <h3>Published by:   Kodansha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  May 1988</h3>
+        <h3>Volumes: 10</h3>
+        <h3 style="margin-right: 200px; " >Original run: August 1, 1989 – December 24, 1994</h3>
     
 
 
@@ -2179,7 +1309,184 @@ The anime blends comedy, drama, and real-life issues, making it both entertainin
       </a>
       </div>
     </div>
-  
+  <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Shinichi Izumi</h2>
+      <p style="font-size: 20px;">
+       Shinichi is the teenage protagonist of Parasyte — an ordinary high school student whose life changes when a parasite tries to enter his brain, but fails and ends up in his right hand instead.
+As a result, Shinichi remains human, but his body becomes partially merged with the parasite, giving him enhanced strength, reflexes, and senses. <br><br>
+Throughout the story, he struggles with his identity and humanity as he gradually becomes more cold and logical, blurring the line between man and monster.
+His internal conflict and growth are central to the story’s philosophical themes.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="048953ade2de798a2e8bbd6b104c6c62.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Migi </h2>
+      <p style="font-size: 20px;">
+     Migi is the parasite that inhabits Shinichi's right hand. Unlike other parasites that take over the brain, Migi was forced to adapt to live in the arm, making him fully conscious and independent from Shinichi.
+He is highly intelligent, logical, and emotionless, driven solely by survival. <br><br>
+Over time, Migi and Shinichi form an unusual partnership, with Migi protecting Shinichi’s life because it ensures his own survival.  <br><br>
+As the series progresses, Migi slowly begins to understand human emotions, showing signs of empathy and curiosity about humanity.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="bfc3a88d81313aa8315b15134417f30a.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Satomi Murano</h2>
+      <p style="font-size: 20px;">
+     Satomi is Shinichi’s kind-hearted classmate and love interest.
+She represents his emotional anchor and serves as a mirror to show how much Shinichi has changed.
+At first, she doesn’t understand his sudden personality shift, feeling hurt and afraid of the new, colder Shinichi. <br><br>
+However, as the story progresses, she realizes that Shinichi is still himself deep inside, and her steady, patient support plays a crucial role in helping him stay connected to his human side.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:340px ; height:400px ;" src="Murano.Satomi.full.4106555.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Ryoko Tamiya (Reiko Tamura)</h2>
+      <p style="font-size: 20px;">
+   Ryoko is a highly intelligent parasite who fully takes over a human woman’s body and later becomes a biology teacher.
+Unlike most parasites, she is calm, thoughtful, and curious about the nature of humans and life itself. <br><br>
+She performs scientific experiments to understand human behavior and reproduction and later gives birth to a human child—an event that deeply affects her.
+Her transformation from a cold killer to a mother willing to sacrifice herself for her baby represents one of the most profound character arcs in the story. <br><br>
+Her philosophical dialogues and eventual self-reflection raise powerful questions about evolution, emotion, and identity.
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="a88ad76d4e52d376b0b832713bd3f54c.jpg" />
+    </div>
+  </div>
+
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -2333,10 +1640,11 @@ The anime blends comedy, drama, and real-life issues, making it both entertainin
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Initial D</h2>
-        <h3>Autor: Shuichi Shigeno   </h3>
+       <h3>Autor: Shuichi Shigeno   </h3>
         <h3>Genre: Action, coming-of-age, and sports</h3>
         <h3>Published by:  Shūkan Young Magazine</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  June 26, 1995</h3>
+        <h3>Volumes: 48</h3>
+        <h3 style="margin-right: 200px; " >Original run:	July 17, 1995 – July 29, 2013</h3>
     
 
 
@@ -2347,7 +1655,160 @@ The anime blends comedy, drama, and real-life issues, making it both entertainin
       </a>
       </div>
     </div>
-  
+  <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Takumi Fujiwara</h2>
+      <p style="font-size: 20px;">
+     Takumi is the main protagonist of Initial D. A quiet and laid-back high school student, he unknowingly becomes a street-racing legend.
+By delivering tofu every morning for his father's shop using a Toyota AE86 Trueno, he develops extraordinary driving skills — especially on mountain passes (tōge). <br><br>
+At first, Takumi has no interest in racing, but his talent catches the attention of local racers. Over time, he begins to take racing seriously, finding passion, purpose, and confidence in it.
+His calm demeanor, instinctive control, and ability to adapt during races make him nearly unbeatable.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="015e5e849be994c10d70ca2983cf4ffe.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Ryosuke Takahashi </h2>
+      <p style="font-size: 20px;">
+      A brilliant and ambitious high school student who becomes disillusioned with the world’s corruption and crime.
+Ryosuke is the leader of the Akina Speed Stars’ rivals, the RedSuns, and later forms Project D — a team aimed at dominating street racing across Japan. <br><br>
+A brilliant strategist and driver of the Mazda RX-7 FC3S, Ryosuke is calm, intellectual, and always thinking several steps ahead. <br><br>
+He becomes Takumi’s mentor and values his potential, helping him push his limits.
+His leadership and planning are key to Project D’s success.
+
+
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="471cbb907d87ac785e74b2dbed89ad1a.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Keisuke Takahashi</h2>
+      <p style="font-size: 20px;">
+     Ryosuke’s younger brother, and the more hot-headed and aggressive driver of the Yellow FD3S Mazda RX-7.
+Initially overconfident and brash, Keisuke is humbled after losing to Takumi. He later joins Project D and trains hard to improve his technique. <br> <br>
+His fiery personality contrasts with Takumi’s cool-headed nature, but he grows into a loyal teammate and a skilled downhill/uphill racer.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="85b310ecd6badb2a2ee0b33f526cd8e0.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -2506,8 +1967,10 @@ Initial D helped popularize drifting culture worldwide and remains a cult classi
         <h3>Autor: Yoshihiro Togashi   </h3>
         <h3>Genre: Adventure Fantasy Martial arts</h3>
         <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  June 4, 1998</h3>
+       <h3>Volumes: 38</h3>
+        <h3 style="margin-right: 200px; " >Original run:	March 3, 1998 – present</h3>
     
+
 
 
       <a href="https://hunterxhuntermanga.online/" target="_blank">
@@ -2517,7 +1980,179 @@ Initial D helped popularize drifting culture worldwide and remains a cult classi
       </a>
       </div>
     </div>
-  
+  <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;"> Gon Freecss</h2>
+      <p style="font-size: 20px;">
+       Gon is a cheerful and energetic boy who sets out on a journey to become a professional Hunter in order to find his father, Ging.
+He begins as a wide-eyed idealist, full of wonder and kindness. However, as the story progresses, he experiences emotional trauma and moral conflict, particularly during the Chimera Ant arc. <br><br>
+His loyalty to friends (especially Killua) and his drive to improve are unwavering. But beneath his optimism lies a darker side: when pushed, Gon can become emotionally unstable, vengeful, and willing to risk everything. <br><br>
+This complexity makes him one of the most psychologically layered shonen protagonists. His most dramatic moment is when he sacrifices years of his life (and nearly his humanity) to defeat Neferpitou in a fit of grief and rage.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="9f72d3638e85271d7cca2837689da954.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Killua Zoldyck </h2>
+      <p style="font-size: 20px;">
+     Born into the world’s most infamous assassin family, Killua was raised to kill — but yearns to live as a normal boy.
+He is brilliant, sarcastic, and fiercely loyal to Gon. At first, he’s cynical and detached, but over time he opens up emotionally. <br><br>
+His story arc centers on breaking free from his family’s control, particularly the manipulative hold of his younger brother Illumi.
+Killua’s Godspeed (Kanmuru) ability, a Nen technique using lightning, represents both his assassin heritage and his evolution into someone who uses power to protect, not kill. <br><br>
+Later in the story, he shows deep emotional strength by choosing to protect his little sister Alluka, showing his growth as both a person and a brother.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="dd8d6fdacfed006e3e28b2baacad5a63.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;"> Kurapika</h2>
+      <p style="font-size: 20px;">
+    The last survivor of the Kurta Clan, Kurapika is driven by revenge against the Phantom Troupe, who slaughtered his people for their scarlet eyes.
+Unlike Gon and Killua, Kurapika is older and more mature — composed, intelligent, and a master strategist. <br><br>
+His Nen ability is highly specialized for fighting Troupe members. He uses chains to bind, restrain, and even kill — but doing so places severe conditions on his own life.
+As the story progresses, Kurapika’s pursuit of justice begins to blur into obsession and self-destruction. He sacrifices his health, happiness, and ideals in the name of vengeance. <br><br>
+In the Succession War arc, he becomes a bodyguard and takes a more political, manipulative role, showing his growth from a hunter to a tactician.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:270px ; height:400px ;" src="61dad488af13560ca727f33ed1601589.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+   <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;"> Leorio Paradinight</h2>
+      <p style="font-size: 20px;">
+     Leorio is the most relatable and grounded member of the main quartet. He joins the Hunter Exam to become a doctor and help those in need.
+At first, he seems comic and greedy, but he's fiercely compassionate and has a strong sense of justice. <br><br>
+Although he isn’t a front-line fighter, he eventually learns Nen and even becomes a public figure, gaining respect in the Hunter Association.
+His most iconic moment is punching Ging in front of everyone — not just for Gon’s sake, but because someone needed to. <br><br>
+Leorio embodies the idea that you don’t need superpowers to be a hero — you just need a big heart.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="rtc87d4d72779e22148e4c8d1ab8c9866.jpg" />
+    </div>
+  </div>
+
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -2682,10 +2317,11 @@ Initial D helped popularize drifting culture worldwide and remains a cult classi
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">JoJo's Bizarre Adventure</h2>
-        <h3>Autor: Hirohiko Araki </h3>
+         <h3>Autor: Hirohiko Araki </h3>
         <h3>Genre: Adventure Supernatural</h3>
         <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: January 1, 1987</h3>
+        <h3>Volumes: 136</h3>
+        <h3 style="margin-right: 200px; " >Original run:	January 1, 1987 – present</h3>
     
 
 
@@ -2697,6 +2333,435 @@ Initial D helped popularize drifting culture worldwide and remains a cult classi
       </div>
     </div>
   
+<h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Jonathan Joestar  (Part 1: Phantom Blood)</h2>
+      <p style="font-size: 20px;">
+       
+        <ul style="font-size: 20px;">
+           
+
+
+<li>Stand: None (uses Hamon)</li>
+
+
+<li>Era: Late 1800s, England</li>
+
+
+<li>Main Enemy: Dio Brando</li>
+        </ul>
+        <p style="font-size: 20px;">
+    Jonathan is the first JoJo and the true definition of a gentleman. He is kind, brave, and always follows his moral values. <br><br>
+     When Dio Brando, his adopted brother, betrays the Joestar family and becomes a vampire, Jonathan trains in Hamon, a technique that channels sunlight energy, to defeat him. His story is tragic and heroic, ending with a self-sacrifice to stop Dio.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:310px ; height:400px ;" src="Jonathan_Joestar.webp" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;"> Joseph Joestar (Part 2: Battle Tendency)</h2>
+      <p style="font-size: 20px;">
+         <ul style="font-size: 20px;">
+
+
+<li>Stand: Hermit Purple (appears in Part 3 and 4)</li>
+
+
+<li>Era: 1930s (young), 1980s–90s (older)</li>
+
+
+<li>Main Enemies: Kars, Esidisi, Wamuu</li>
+        </ul>
+        <p style="font-size: 20px;">
+     Joseph is energetic, clever, and loves to joke around, but he's also a genius in battle. He's known for predicting what his enemies will say next. He fights the Pillar Men — ancient beings with god-like strength — and becomes a legendary figure. <br><br>
+      As he grows older, he helps his grandson Jotaro in future battles. His creativity makes him one of the fan favorites.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:350px ; height:400px ;" src="thumb-1920-95729.png" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Jotaro Kujo  (Part 3: Stardust Crusaders)</h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: Star Platinum</li>
+
+
+<li>Era: 1980s–2010s</li>
+
+
+<li>Main Enemy: Dio </li>
+</ul>
+<p style="font-size: 20px;">
+     Jotaro is Joseph’s grandson and one of the most iconic JoJos. He starts as a high school delinquent but is actually a heroic and responsible person.  <br><br>
+     His Stand, Star Platinum, has super strength, speed, and precision — and later gains the power to stop time (Star Platinum: The World). He leads a team of Stand users across the world to defeat DIO and save his mother.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="125e4b93089afbbdfc2b2a69e2f8d7d76b435184r1-732-948v2_hq.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Josuke Higashikata (Part 4: Diamond is Unbreakable)</h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: Crazy Diamond</li>
+
+
+<li>Era: 1999</li>
+
+
+<li>Main Enemy: Yoshikage Kira</li>
+</ul>
+<p style="font-size: 20px;">
+   Josuke is the illegitimate son of Joseph Joestar, making him Jotaro’s uncle. He’s cheerful, friendly, and very loyal, but also quick-tempered, especially when someone insults his hairstyle.  <br><br>
+   His Stand, Crazy Diamond, can heal people and fix objects, making him a great ally in battle. He and his friends protect the peaceful town of Morioh from the serial killer Kira.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="josuke-jojo-artwork-gold.jpg" />
+    </div>
+  </div>
+<style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Giorno Giovanna (Part 5: Golden Wind) </h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: None Gold Experience → Gold Experience Requiem</li>
+
+
+<li>Era: Early 2000s, Italy</li>
+
+
+<li>Main Enemy: Diavolo</li>
+</ul>
+<p style="font-size: 20px;">
+  Giorno is the son of Dio (who used Jonathan’s body), making him a Joestar by bloodline. Unlike Dio, Giorno wants to use power to help others. His goal is to rise through the ranks of the Italian mafia (Passione) and change it from within. <br><br>His Stand evolves into Gold Experience Requiem, which can undo any action, making it nearly invincible. Giorno becomes the new boss of the mafia by the end of his journey.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="c133f01755dce29739cb3d0608de1efc.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Jolyne Cujoh  (Part 6: Stone Ocean)</h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: Stone Free</li>
+
+
+<li>Era: 2010s, Florida, USA</li>
+
+
+<li>Main Enemy: Enrico Pucci</li>
+</ul>
+<p style="font-size: 20px;">
+  Jolyne is the daughter of Jotaro Kujo. At the start of the story, she is wrongly imprisoned. Her Stand, Stone Free, allows her to unravel into string, which she uses both for combat and for clever tricks. <br><br> As the first female JoJo, Jolyne shows strength, heart, and growth. She fights to stop Father Pucci, who tries to create a new perfect universe using DIO’s will.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="1a756bdf480e78d16768e2a6bb853f00.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Johnny Joestar (Part 7: Steel Ball Run)</h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: Tusk (Acts 1–4)</li>
+
+
+<li>Era: Alternate universe, late 1800s USA</li>
+
+
+<li>Main Enemy: Funny Valentine</li>
+</ul>
+<p style="font-size: 20px;">
+  Johnny is a former horse-racing champion who became paralyzed from the waist down. At the start, he is bitter and lost, but his journey with Gyro Zeppeli across the U.S. in the Steel Ball Run race helps him find purpose again. <br><br>His Stand, Tusk, evolves into several forms and eventually gains the powerful Golden Spin. He is a tragic and deep character, central to the emotional core of Part 7.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="790906f0c30221eebb3160660d2808d0.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1700px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Josuke Higashikata (Part 8: JoJolion)</h2>
+      <p style="font-size: 20px;">
+        <ul style="font-size: 20px;">
+
+
+<li>Stand: Soft & Wet</li>
+
+
+<li>Era: Alternate universe, post-2011 Morioh</li>
+
+
+<li>Main Enemy: Tooru</li>
+</ul>
+<p style="font-size: 20px;">
+   This Josuke is not the same as the one from Part 4 — he’s a fusion of two people (Yoshikage Kira and Josefumi Kujo) who wakes up with no memory. <br><br> His Stand, Soft & Wet, can steal properties like moisture, sight, or friction using soap bubbles. He tries to uncover the truth about himself, his family, and the mysterious Wall Eyes in the new version of Morioh. His story is full of mystery, tragedy, and identity.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="5a6ba3a92dd078474360fd6d5f4e2025.jpg" />
+    </div>
+  </div>
 
      <h2>A few words about the author:</h2>
      <style>
@@ -2892,7 +2957,8 @@ The series is praised for its stylish animation, creative fights, faithful adapt
         <h3>Autor: Eiichiro Oda    </h3>
         <h3>Genre: Adventure Fantasy comedy Science fiction </h3>
         <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date: July 22, 1997</h3>
+        <h3>Volumes: 111</h3>
+        <h3 style="margin-right: 200px; " >Original run:	July 22, 1997 – present</h3>
     
 
 
@@ -2904,6 +2970,476 @@ The series is praised for its stylish animation, creative fights, faithful adapt
       </div>
     </div>
     
+ <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Monkey D. Luffy</h2>
+      <p style="font-size: 20px;">
+        Captain | Devil Fruit: Hito Hito no Mi, Model: Nika | Haki: All three types <br><br>
+Personality: Carefree, brave, extremely loyal, values freedom and friendship <br><br>
+Symbol: Straw hat given by Shanks<br><br>
+       Luffy grew up in a small village and was inspired by the pirate Red-Haired Shanks, who saved his life. He accidentally ate the Gomu Gomu no Mi as a child, gaining rubber powers. <br><br>Later, it's revealed his fruit is actually Mythical Zoan – giving him god-like cartoonish freedom in combat. Luffy defeats powerful enemies not with strategy, but pure willpower and creativity. He always helps those in need, no matter the risk.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:370px ; height:400px ;" src="60f403b260464c791140c7d6c591e3be.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Roronoa Zoro </h2>
+      <p style="font-size: 20px;">
+        First crewmate | Swordmaster <br><br>
+Sword Style: Santoryu (Three Sword Style) <br><br>
+Haki: Armament, Conqueror’s Haki<br>
+     <br>Zoro was a bounty hunter before joining Luffy. His dream is to become the strongest swordsman in the world, to fulfill a promise to his childhood friend Kuina. <br><br> He trained under Dracule Mihawk during the time skip. He has immense durability — able to survive wounds that would kill most men. Despite seeming cold, Zoro deeply respects loyalty and will sacrifice himself for the crew.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="408dc466de309388f83f323a124aa4bf.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Nami</h2>
+      <p style="font-size: 20px;">
+        Navigator | Weather Specialist <br><br>
+Clima-Tact: Enhanced by Usopp and Zeus (a Homie from Big Mom) <br><br>
+     Nami was forced to work for Arlong’s crew, drawing maps while stealing from towns. After being saved by Luffy, she truly joined the Straw Hats. She uses the Clima-Tact to control lightning, wind, and mirages. <br><br> In Wano, she gained Zeus, a living thundercloud from Big Mom, making her attacks far more powerful. Despite loving money, Nami cares deeply for her friends and is the emotional balance of the crew.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:340px ; height:400px ;" src="Nami_Manga_Pre_Timeskip_Infobox.webp" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Sanji Vinsmoke</h2>
+      <p style="font-size: 20px;">
+        Cook | Black Leg Fighting Style <br><br>
+Background: Prince of Germa 66, ran away from his family <br><br>
+Power-Up: Genetic enhancements awaken in Wano<br><br>
+     Sanji was raised harshly by his royal scientist father, Judge. He escaped and worked under Chef Zeff at Baratie, learning cooking and his fighting style. Sanji never hits women under any circumstances and always respects their dignity. He also acts as a big brother figure to the crew. <br><br> In Wano, his Vinsmoke lineage activated, giving him a durable exoskeleton and increased speed, though it caused inner conflict with his
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:360px ; height:400px ;" src="438e2d74268e753a51e782a54b3b17f9.jpg" />
+    </div>
+  </div>
+     <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Usopp</h2>
+      <p style="font-size: 20px;">
+        Sniper | Inventor <br><br>
+Haki: Observation Haki (Wano)<br><br>
+       Usopp is the son of Yasopp (a sniper from Shanks’ crew). He starts as a cowardly liar who dreams of becoming a brave warrior. Over time, he becomes extremely brave when it matters most. <br><br> At Enies Lobby, he fought as “Sogeking” (Sniper King), and in Dressrosa, he gained the nickname “God Usopp” after sniping Sugar from an impossible distance. He’s also the crew’s gadget master, building weapons and tools for battle.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:350px ; height:400px ;" src="Usopp_Manga_Pre_Timeskip_Infobox.webp" />
+    </div>
+  </div>
+   <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Tony Tony Chopper</h2>
+      <p style="font-size: 20px;">
+        Doctor | Reindeer-Human Hybrid <br><br>
+Devil Fruit: Hito Hito no Mi <br><br>
+Transformation: Multiple forms using Rumble Balls<br>
+      Chopper was shunned by both humans and reindeer for being different. Dr. Hiriluk and Dr. Kureha inspired him to become a doctor. He’s one of the smartest medical minds in the series. <br><br> Though often seen as the “cute mascot,” Chopper is extremely brave. In Monster Point, he becomes a giant beast. After the time skip, he masters his forms and can transform at will. His bounty remains a running joke at just 1,000 Berries.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:330px ; height:400px ;" src="Tony_Tony_Chopper_Manga_Post_Timeskip_Infobox.webp" />
+    </div>
+  </div>
+   <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Nico Robin</h2>
+      <p style="font-size: 20px;">
+        Archaeologist | Poneglyph Reader <br><br>
+Devil Fruit: Hana Hana no Mi – sprouts limbs anywhere <br><br>
+Dream: To discover the True History<br>
+     Robin is calm, intelligent, and mysterious. As a child, she was declared a threat by the World Government for her ability to read ancient scripts. Her homeland, Ohara, was destroyed, making her a survivor of genocide. <br><br> She joined several criminal groups to survive until she found a true home with the Straw Hats. In Wano, she unveils a powerful new Demonio Fleur form — a giant, black-winged version of herself.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:350px ; height:400px ;" src="6943776dde70572783457ca9fda6db32.jpg" />
+    </div>
+  </div>
+   <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Franky</h2>
+      <p style="font-size: 20px;">
+        Shipwright | Cyborg <br><br>
+Weapon Arsenal: Strong Right, Franky Radical Beam, General Franky (giant mech suit)<br><br>
+     Franky was an orphan raised by pirates, who became a ship-building genius. He was injured and rebuilt himself as a cyborg using scrap metal. He designed the Thousand Sunny — the Straw Hats’ second ship, powered by Cola. <br><br> Franky is loud, energetic, and emotional, but also brilliant. He believes ships should be treated with respect, and his bond with the crew is unshakable.
+
+
+
+
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:360px ; height:400px ;" src="f7e6d4572069b532ba1f9936125873b4.jpg" />
+    </div>
+  </div>
+   <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Brook</h2>
+      <p style="font-size: 20px;">
+        Musician | Soul-based Swordsman <br><br>
+Devil Fruit: Yomi Yomi no Mi (Revival Fruit) <br><br>
+Abilities: Soul attacks, ghost form, ice slash<br><br>
+       Brook died with his crew but came back to life after his Devil Fruit reactivated his soul. Alone for years, he eventually meets the Straw Hats. <br><br> He plays the violin and guitar, lightens the mood, and tells perverted jokes, but also shows deep wisdom. His soul powers allow him to fight on land and sea — and even damage Big Mom’s soul. He’s also incredibly fast and agile.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:330px ; height:400px ;" src="bab464cdb8e01b5033b30d69bbe5dab5.jpg" />
+    </div>
+  </div>
+   <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Jinbe</h2>
+      <p style="font-size: 20px;">
+        Helmsman | Former Warlord of the Sea<br><br>
+Fighting Style: Fish-Man Karate<br><br>
+Haki: Armament Haki<br>
+     Jinbe is a noble and wise fish-man who seeks peace between humans and fish-men. He served under Fisher Tiger and later became a respected Warlord. <br><br> He gives up his title to support Luffy during the Whole Cake Island arc. Jinbe joins the crew officially during Wano. He is calm under pressure and fiercely protective of his crew. As helmsman, he can control the Thousand Sunny even in chaotic waters.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:350px ; height:400px ;" src="18dd38ca812f9949c9bcdd6da9d67473.jpg" />
+    </div>
+  </div>
+ <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
     
     <h2>A few words about the author:</h2>
      <style>
@@ -3062,10 +3598,14 @@ With over 1000 episodes and counting, One Piece has captivated audiences worldwi
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Berserk</h2>
-        <h3>Autor: Kentaro Miura  </h3>
+        <h3>Autor: Kentaro Miura (vol. 1–41)  </h3>
+        <h3>Illustrated by: Kentaro Miura (vol. 1–41)</h3> <br>
+        <h3>Autor: Kouji Mori (vol. 42–)</h3>
+        <h3>Illustrated by: Studio Gaga (vol. 42–)</h3> <br>
         <h3>Genre:  Dark fantasy or grimdark</h3>
         <h3>Published by: Hakusensha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  August 25, 1989</h3>
+        <h3>Volumes: 42</h3>
+        <h3 style="margin-right: 200px; " >Original run:	August 25, 1989 – present</h3>
     
 
 
@@ -3076,7 +3616,178 @@ With over 1000 episodes and counting, One Piece has captivated audiences worldwi
       </a>
       </div>
     </div>
+<h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Guts</h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+Guts was born from the corpse of a hanged woman and raised by mercenaries. He suffered a brutal, abusive childhood. As a teen, he became a skilled swordsman and was eventually recruited into the Band of the Hawk, led by Griffith. Guts formed deep bonds with the group, especially Griffith and Casca.
+<br><br>
+Character Arc: <br><br>
+After Griffith's betrayal (during the Eclipse), Guts becomes consumed by rage and vengeance. He hunts Apostles and demons while protecting Casca. Despite his trauma, Guts still shows loyalty and empathy to those close to him. His journey explores the cost of revenge, the will to live, and human resilience.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:410px ;" src="e91838a5e0fce2a78e3b763edbc3494b.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Griffith </h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+Griffith rose from poverty to nobility through military genius and sheer ambition. He dreamed of building his own kingdom and gathered loyal followers, including Guts and Casca. He valued Guts as a friend but also saw him as a threat to his dream.
+<br><br>
+The Eclipse: <br><br>
+After Guts left the Band, Griffith spiraled into despair and was tortured. When given the chance by the God Hand, he sacrificed his comrades to become Femto, a demonic being. His transformation is one of the most tragic and horrifying moments in manga history.
+<br><br>
+As Femto: <br><br>
+He returns to the world in a new body and builds Falconia, becoming a messianic figure. However, his actions reveal his complete detachment from humanity and morality.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:410px ;" src="722e3630c20d483a085faff5caa00130.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Casca</h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+Casca was once a peasant girl who joined the Band of the Hawk after Griffith saved her. She rose to become one of his top commanders. She initially resents Guts but later grows close to him and falls in love.
+<br><br>
+Eclipse Aftermath: <br><br>
+During the Eclipse, Casca is mentally and physically broken by Femto. She survives with Guts but loses her sanity. For much of the story, she remains in a childlike, traumatized state. Eventually, she regains her mind, but the emotional scars remain.
+<br><br>
+Character Significance: <br><br>
+Casca represents both strength and vulnerability. Her story is deeply tragic but also shows the impact of healing, care, and trauma recovery.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="78aeae1093015be662b0aa45a10a3174.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Skull Knight</h2>
+      <p style="font-size: 20px;">
+     About: <br><br>
+A mysterious armored warrior who helps Guts on several occasions. He seems to know the true nature of the God Hand and Apostles. He may have once been a human king who suffered a fate similar to Griffith’s. Skull Knight provides insight into the deeper lore of the world.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="26c8ee36126825cf6092ece3c1e239a6.jpg" />
+    </div>
+  </div>
     <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3113,6 +3824,18 @@ With over 1000 episodes and counting, One Piece has captivated audiences worldwi
     </div>
     <div class="imagete">
       <img src="n96868-R5aBOYlTExZR.jpg" style="height:300px ;width: 200px; margin: 0;">
+    </div>
+  </div>
+  <div class="on">
+    <div class="textor">
+      <h2 style="color: red;">Kouji Mori</h2>
+     <p>Kouji Mori is a Japanese manga artist best known for creating the series Holyland and Suicide Island. He is also a close friend of Kentaro Miura, the creator of Berserk, and has taken on the role of supervising and continuing Berserk after Miura's passing, following Miura’s notes and their conversations.
+
+</p>
+
+    </div>
+    <div class="imagete">
+      <img src="Kouji_Mori.webp" style="height:300px ;width: 200px; margin: 0;">
     </div>
   </div>
   <h2>Anime Adaptation:</h2>
@@ -3246,12 +3969,12 @@ For many fans, the manga remains the definitive way to experience Berserk, prais
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Monster</h2>
-        <h3>Autor: Naoki Urasawa </h3>
-        <h3>Genre: Crime Mystery Psychological thriller</h3>
-        <h3>Published by: Shogakukana</h3>
-        <h3 style="margin-right: 200px; " >Release Date:  30 June 1995</h3>
+        <h3>Autor: Takehiko Inoue </h3>
+        <h3>Genre: Epic Historical Martial arts</h3>
+        <h3>Published by: Kodansha</h3>
+        <h3>Volumes: 	37</h3>
+        <h3 style="margin-right: 200px; " >Original run: September 3, 1998 – May 21, 2015 (on hiatus)</h3>
     
-
 
       <a href="https://www.monstermangafree.com/index.html" target="_blank">
         <button style="background-color: #252323; color: white; padding:  15px 75px; border-radius: 5px; margin-top: 10px;">
@@ -3260,6 +3983,178 @@ For many fans, the manga remains the definitive way to experience Berserk, prais
       </a>
       </div>
     </div>
+     <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Dr. Kenzo Tenma</h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+A brilliant Japanese brain surgeon working in Germany. Tenma chooses to save the life of a young boy (Johan) over a mayor, believing all lives are equal. This decision ruins his career and personal life — but worse, it allows a true evil to live.
+<br><br>
+Character Arc: <br><br> 
+Haunted by guilt, Tenma spends years tracking Johan across Europe to stop the monster he once saved. He faces philosophical and moral dilemmas, constantly tested on what it means to take or save a life.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="a08ecca6060bf5eee178cb7c8ae6bcde.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Johan Liebert </h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+A boy saved by Tenma after a gunshot to the head. He seems perfect on the outside but is in truth a sociopathic mastermind. Johan manipulates people into killing, committing suicide, or destroying each other — all without ever getting his hands dirty.
+<br><br>
+Philosophy: <br><br>
+Johan embodies nihilism. He believes life has no value and seeks to prove that anyone can become a monster under the right circumstances. Despite this, his complex trauma hints at a deeper, tragic past linked to secret experiments and psychological abuse.
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="351795ea57122f4d1fb906463ab04936.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Nina Fortner / Anna Liebert</h2>
+      <p style="font-size: 20px;">
+     Backstory: <br><br>
+Raised separately from Johan, Nina forgets much of her early childhood due to trauma. As the story progresses, she regains memories of their dark past in orphanages and psychological experiments.
+<br><br>
+Character Arc: <br><br>
+She studies law and uses her intelligence and strength to fight back against Johan’s influence. She struggles with her feelings of guilt and love toward her brother and plays a crucial role in confronting him.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="f6a3a4358c47819d3fa19d54f1136840.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Inspector Heinrich Lunge</h2>
+      <p style="font-size: 20px;">
+     Backstory: <br><br>
+A veteran detective who initially believes Tenma is behind the murders linked to Johan. He becomes obsessed with the case, going so far as to create a mental "file" for Tenma and even mimic his movements during investigations.
+<br><br>
+Character Arc: <br><br>
+Lunge is initially blinded by logic and ego but slowly realizes that Johan is the true monster. His development is one of the most satisfying, showing the fallibility of law when it ignores human psychology.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="681684ef5a2d26e5c2f414bd5c6176f3.jpg" />
+    </div>
+  </div>
     <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3418,10 +4313,11 @@ The anime was praised for its deep, suspenseful storytelling, complex characters
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Vagabond</h2>
-        <h3>Autor: Takehiko Inoue </h3>
+       <h3>Autor: Takehiko Inoue </h3>
         <h3>Genre: Epic Historical Martial arts</h3>
         <h3>Published by: Kodansha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:   September 3, 1998</h3>
+        <h3>Volumes: 	37</h3>
+        <h3 style="margin-right: 200px; " >Original run: September 3, 1998 – May 21, 2015 (on hiatus)</h3>
     
 
 
@@ -3432,6 +4328,180 @@ The anime was praised for its deep, suspenseful storytelling, complex characters
       </a>
       </div>
     </div>
+    <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Miyamoto Musashi (birth name: Shinmen Takezō)</h2>
+      <p style="font-size: 20px;">
+       Backstory: <br><br>
+Born as Takezō in a violent era of war, he was feared as a wild, brutal fighter. After surviving the Battle of Sekigahara, he goes on a journey to become the strongest under heaven. He adopts the name Musashi Miyamoto after a spiritual and emotional turning point.
+<br><br>
+Character Arc:<br><br>
+Musashi begins as a savage warrior obsessed with strength and killing. Over time, through battles, defeats, and moments of solitude, he matures — seeking meaning beyond just violence. His internal struggles reflect themes of ego, death, and what it truly means to be invincible.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:270px ; height:400px ;" src="a511d5eb4c9588d950572dd8e5272e81.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Sasaki Kojirō</h2>
+      <p style="font-size: 20px;">
+     About: <br><br>
+Unlike traditional portrayals, Kojirō in Vagabond is deaf and mute, but an artistic and instinctive genius with the sword. His talent seems almost supernatural, and he treats combat like a dance.
+<br><br>
+Character Arc: <br><br>
+Kojirō is not driven by ambition or ego — he fights for the joy and beauty of the sword. His existence contrasts sharply with Musashi’s brutal path, and their eventual duel is symbolic rather than just competitive.
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:300px ; height:400px ;" src="988e86dcf9130c31749bf3b538a830ed.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Matahachi Hon’iden</h2>
+      <p style="font-size: 20px;">
+     About: <br><br>
+Unlike Musashi, Matahachi lacks resolve. He abandons the battlefield, lies about his life, and lives in shame. He assumes Musashi’s name at one point, creating confusion and danger.
+<br><br>
+Character Arc: <br><br>
+Matahachi represents a man lost in the chaos of war and pride. Though often cowardly, he’s a realistic character — deeply flawed, but capable of reflection and regret.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="932dac58ec87fa751f17eb3993eef93a.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Otsū</h2>
+      <p style="font-size: 20px;">
+    About: <br><br>
+Otsū was once engaged to Matahachi but falls in love with Musashi. She represents peace, emotional grounding, and a life Musashi could have if he abandons violence. Despite years of separation and hardship, she remains devoted to him.
+<br><br>
+Relationship with Musashi: <br><br>
+Otsū and Musashi share a powerful yet complex bond. Despite loving him, she often feels conflicted, knowing he prioritizes the way of the sword over personal relationships. She waits for him for years, hoping he will return not just stronger—but also more human and open to love.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="39324f862b6354c73e1dfcd0c8a486e2.jpg" />
+    </div>
+  </div>
     <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3546,10 +4616,11 @@ The anime was praised for its deep, suspenseful storytelling, complex characters
  </style>      
       <div class="text" style="padding-left: 20px; max-width: 600px; text-align:left;">
         <h2 style="color: red;margin-right: 200px">Slam Dunk</h2>
-        <h3>Autor: Takehiko Inoue   </h3>
+       <h3>Autor: Takehiko Inoue   </h3>
         <h3>Genre: Sports, Comedy, and Drama</h3>
         <h3>Published by: Shueisha</h3>
-        <h3 style="margin-right: 200px; " >Release Date:   February 8, 1991</h3>
+        <h3>Volumes: 31</h3>
+        <h3 style="margin-right: 200px; " >Original run: October 1, 1990 – June 17, 1996</h3>
     
 
 
@@ -3560,6 +4631,222 @@ The anime was praised for its deep, suspenseful storytelling, complex characters
       </a>
       </div>
     </div>
+     <h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Hanamichi Sakuragi</h2>
+      <p style="font-size: 20px;">
+      Backstory: <br><br>
+A delinquent and street fighter with no basketball experience, Hanamichi joins the Shohoku basketball team to impress a girl, Haruko Akagi. At first, he’s a total beginner, but his raw athleticism, jumping ability, and determination make him a rising star.
+<br><br>
+Character Arc: <br><br>
+He evolves from a selfish clown to a passionate player who learns the value of teamwork and perseverance. His growth is both comic and inspiring, making him one of the most iconic shonen protagonists.
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="34b153f9a1369fd615713db4b9726258.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Kaede Rukawa </h2>
+      <p style="font-size: 20px;">
+      About: <br><br>
+A naturally gifted player with superb scoring and athletic skills. Rukawa is calm, emotionless, and immensely popular with girls—something that drives Hanamichi crazy. His dream is to play in America.
+<br><br>
+Dynamic: <br><br>
+He’s the team's ace but struggles with teamwork. His rivalry with Hanamichi pushes both to improve, though Rukawa rarely acknowledges it.
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:330px ; height:400px ;" src="c11de7e9e9ae99284fa13dd39d085bd6.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Takenori Akagi</h2>
+      <p style="font-size: 20px;">
+      About: <br><br>
+Known as "Gori" (Gorilla) due to his appearance, Akagi is the backbone of the team. His dream is to lead Shohoku to the national championships. He's also Haruko's older brother.
+<br><br>
+Character Arc: <br><br> 
+He starts as the only serious player on a chaotic team, but eventually gains respect from everyone, especially Hanamichi, who looks up to him like a big brother.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="130c0eb6dfc0f6aea2aeb6e268db24de.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Hisashi Mitsui</h2>
+      <p style="font-size: 20px;">
+     Backstory: <br><br>
+A former MVP in middle school, Mitsui quit basketball due to injury and fell into delinquency. After a dramatic return, he begs to rejoin the team—one of the most emotional scenes in the series.
+<br><br>
+Character Arc: <br><br>
+Haunted by regret, Mitsui becomes one of the team’s most passionate and reliable players, especially in clutch moments with his deadly 3-pointers.
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:260px ; height:400px ;" src="b2bdd45d41c585deac70462ba4d1587b.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Ryota Miyagi</h2>
+      <p style="font-size: 20px;">
+    About: <br><br>
+Despite his small size, Miyagi is fast, agile, and tactically sharp. He has a hot temper and a strong will. Like Hanamichi, he has a crush on Haruko but keeps it quiet.
+<br><br>
+Character Arc: <br><br>
+He’s the team’s "brain" on the court, often directing plays and controlling the tempo. His personal growth mirrors the team’s development in unity and maturity.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:270px ; height:400px ;" src="d33b9a12307cbc12f42246f4b2723115.jpg" />
+    </div>
+  </div>
     <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3723,8 +5010,10 @@ Slam Dunk played a major role in popularizing basketball in Japan and remains be
       <h3>Author: Hiroshi Takano </h3>
       <h3>Genre: Adventure Drama Sports</h3>
       <h3>Published by: Shueisha</h3>
-      <h3 style="margin-right: 200px; ">Release Date: 18 April 2008</h3>
+      <h3>Volumes: 17</h3>
+        <h3 style="margin-right: 200px; " >Original run:	1 November 2007 – 27 October 2011</h3>
   
+   
    
 
 <a href="https://theclimber.club/" target="_blank">
@@ -3735,7 +5024,195 @@ Slam Dunk played a major role in popularizing basketball in Japan and remains be
 </div>
 </div>
 </div>
+<h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Mori Buntarō (Bun-chan)</h2>
+      <p style="font-size: 20px;">
+      About: <br><br>
+A high school transfer student who accidentally discovers climbing, which becomes both his passion and his curse. His personality is shaped by trauma, alienation, and an inability to connect with people.
+Buntarō gradually moves from sport climbing with friends to solo free climbing, then to dangerous alpine ascents, driven by an almost self-destructive need to test his existence against nature.
+<br><br>
+Character Arc: <br><br>
+From a lost and isolated boy to a man confronting the meaning of life, death, and loneliness on the highest peaks. The story shows how climbing becomes a metaphor for his inner struggle.
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:270px ; height:400px ;" src="294155c7124f4008095531274c752c1a.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Masao Oonishi </h2>
+      <p style="font-size: 20px;">
+      About: <br><br>
+
+Oonishi is recognized for his skill in alpine-style ascents, which emphasize speed, efficiency, and minimal gear compared to traditional expedition-style climbs. <br><br>
+
+He has been involved in various challenging climbs, especially in the Japanese Alps and internationally, earning respect for both his physical prowess and thoughtful approach to climbing ethics.
+<br><br>
+Beyond climbing, Oonishi has contributed to climbing literature and education — sharing his experiences and philosophies to inspire younger climbers.
+<br><br>
+He is sometimes referenced in climbing-related manga or documentaries as a figure embodying true passion and dedication to mountaineering.
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:240px ; height:400px ;" src="36840.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Yumi Shirai </h2>
+      <p style="font-size: 20px;">
+     About: <br><br>
+
+Yumi Shirai is one of the few female characters in The Climber who offers emotional warmth and a sense of normalcy to Mori Buntarō’s intense and solitary life as a climber.
+<br><br>
+She is not a climber herself but understands and respects Mori’s passion and struggles.
+<br><br>
+Yumi represents the possibility of human connection and emotional support that contrasts with the harsh, isolating world of extreme mountain climbing.
+<br><br>
+Their relationship is subtle and understated — it’s more about quiet companionship and mutual understanding than dramatic romance.
+
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:250px ; height:400px ;" src="main_alt-c7c8b5ce7ae274b54cf41378d2d8dd5a.jpeg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Hana</h2>
+      <p style="font-size: 20px;">
+    About: <br><br>
+Hana symbolizes everything Mori denies himself: love, warmth, a normal life.<br><br>
+
+She’s persistent in her kindness, but also quietly realistic; she senses the wall around Mori’s heart.<br><br>
+
+Her interactions with Mori are fragile: she opens his world a little, but never fully reaches him.<br><br>
+
+Hana is both a beacon and a reminder of what Mori risks losing forever.<br><br>
+
+Symbolism:<br><br>
+
+Where mountains are cold and eternal, Hana is soft and alive — representing the world Mori might never belong to.<br><br>
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:250px ; height:400px ;" src="50900b257598650e95926dd488e077c1.jpg" />
+    </div>
+  </div>
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3883,7 +5360,8 @@ Slam Dunk played a major role in popularizing basketball in Japan and remains be
   <h3 >Autor: Makoto Yukimura </h3>
   <h3>Genre: Adventure Epic Historica</h3>
   <h3>Published by: Kodansha</h3>
-  <h3 style="margin-right: 200px; ">Release Date: October 19, 2005.</h3>
+  <h3>Volumes: 28</h3>
+        <h3 style="margin-right: 200px; " >Original run:	April 13, 2005 – present</h3>
 
 
  
@@ -3895,7 +5373,209 @@ Slam Dunk played a major role in popularizing basketball in Japan and remains be
 </a>
 </div>
 </div>
+<h2 >Heroes:</h2>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Thorfinn (Thorfinn Karlsefni)</h2>
+      <p style="font-size: 20px;">
+     Background: <br><br>
+
+Born in Iceland, son of Thors, a legendary warrior who chose pacifism.<br><br>
+
+
+Witnessed his father's death at a very young age, which shaped his obsession with revenge.<br><br>
+
+
+Psychological journey:<br><br>
+
+
+His life with Askeladd's band becomes a prison of hatred; he lives only to kill Askeladd.<br><br>
+
+
+After Askeladd’s death, Thorfinn falls into despair, loses purpose, and becomes a slave.<br><br>
+
+
+Through friendship with Einar, Thorfinn starts to reflect on the meaning of life, guilt for the people he killed, and discovers a desire to create rather than destroy.
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:280px ; height:400px ;" src="467cedfc92379d1a1e33109abf633fa9.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Askeladd </h2>
+      <p style="font-size: 20px;">
+    Background: <br><br>
+
+Half-Danish, half-Welsh; born as Lucius Artorius Castus (named after the legendary figure, Arthur).<br><br>
+
+Grew up with deep resentment toward the Danes, who oppressed his mother’s people.<br><br>
+
+Complex personality:<br><br>
+
+Outwardly cunning, ruthless, manipulative; inwardly holds a desperate love for Wales and desire to protect it.<br><br>
+
+Sees himself as dirty so others (like Canute) can become "clean" leaders.<br><br>
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:250px ; height:400px ;" src="cd3d51ca8f823193f0948f4ed6ee22f1.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;"> Thors Snorresson (Thors)</h2>
+      <p style="font-size: 20px;">
+     Background: <br><br>
+Born into the fierce warrior clan, the Jomsvikings, known for strict codes and brutal warfare.<br><br>
+
+Fought in many battles and gained the reputation of an unbeatable warrior.<br><br>
+
+After the birth of his daughter Ylva and living with his wife Helga, Thors becomes disillusioned with killing.<br><br>
+
+Fakes his own death during battle to escape the endless cycle of violence and settles in Iceland, living peacefully as a fisherman and family man.<br><br>
+
+
+
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:290px ; height:400px ;" src="69c49366b6ee9057f2a075e5857cc60d.jpg" />
+    </div>
+  </div>
+  <style>
+    .cont {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .textop {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .imagekol {
+      flex: 1;
+      text-align: right;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="textop">
+      <h2 style="font-size: 30px;">Canute (Prince Canute / King Canute)</h2>
+      <p style="font-size: 20px;">
+    Background: <br><br>
+ 
+Son of King Sweyn, overshadowed and sheltered as a child.<br><br>
+
+Transformation:<br><br>
+
+Starts timid, shy, deeply religious, and terrified of violence.<br><br>
+
+After witnessing Ragnar’s death and Askeladd’s sacrifice, rejects the idea of a distant, passive God.<br><br>
+
+Becomes determined, cold ruler: willing to use violence to create a utopia.<br><br>
+
+      </p>
+    </div>
+    <div class="imagekol">
+      <img style="width:360px ; height:400px ;" src="f86c7e8642a7ab1ee8dd4d9c76de5083.jpg" />
+    </div>
+  </div>
 <h2>A few words about the author:</h2>
      <style>
     .on {
@@ -3975,10 +5655,8 @@ Vinland Saga has been acclaimed for its storytelling, animation quality, and emo
       <img style="width:300px ; height:400px ;" src="aV5BNDA3MGNmZTEtMzFiMy00ZmViLThhNmQtMjQ4ZDc5MDEyN2U1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
     </div>
   </div>
-    jak masz na imie?
+ 
 </body>
 </html>
- 
-     
  
      
