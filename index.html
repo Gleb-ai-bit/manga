@@ -7,56 +7,56 @@
     <title>Best manga to read</title>
     <style>
        /* Domyślnie – na komputerze (szeroki ekran) */
-  .on {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    flex-direction: row;
-  }
+.on {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-direction: row;
+}
 
-  .textor {
-    flex: 1;
-    padding: 20px;
-    font-size: 25px;
+.textor {
+  flex: 1;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.imagete {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.imagete img {
+  height: 300px;
+  width: 200px;
+  margin: 0;
+  border-radius: 8px; /* opcjonalnie: zaokrąglone rogi */
+}
+
+/* Na telefonie (do 700px): pionowy układ, obrazek na środku */
+@media (max-width: 700px) {
+  .on {
+    flex-direction: column;
+    text-align: center;
   }
 
   .imagete {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
+    text-align: center;
+    padding: 10px;
   }
 
   .imagete img {
-    height: 300px;
-    width: 200px;
-    margin: 0;
-    border-radius: 8px; /* opcjonalnie: zaokrąglone rogi */
+    width: 80%;  /* <-- tu ustawiłem szerszy obrazek na telefonie */
+    height: auto;
   }
 
-  /* Na telefonie (do 700px): pionowy układ, obrazek na środku */
-  @media (max-width: 700px) {
-    .on {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .imagete {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .imagete img {
-      width: 50%;  /* lub inna szerokość, np. max-width: 200px; */
-      height: auto;
-    }
-
-    .textor {
-      padding: 10px;
-      font-size: 20px; /* trochę mniejsza czcionka na telefonie */
-    }
+  .textor {
+    padding: 10px;
+    font-size: 20px; /* trochę mniejsza czcionka na telefonie */
   }
+}
       /* Domyślnie – komputer: obok siebie */
   .cont {
     display: flex;
